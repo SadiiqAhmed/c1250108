@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hope Valley Hospital</title>
+  <!-- Google Font (clean pairing) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>" type="image/svg+xml">
+  <!-- external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== HEADER / NAV (fixed) ===== -->
+  <header role="banner">
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">🏥 Hope Valley</a>
+      </div>
+      <nav role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Departments</a></li>
+          <li><a href="booking.html">Book Appointment</a></li>
+          <li><a href="help.html">Help</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <!-- HERO -->
+    <section class="hero" style="background-image: linear-gradient(135deg, rgba(0, 40, 80, 0.85), rgba(0, 80, 120, 0.6)), url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&h=400&fit=crop');">
+      <div class="hero-content">
+        <h1>Hope Valley Hospital</h1>
+        <p class="tagline">Compassionate care, cutting-edge medicine.</p>
+        <a href="booking.html" class="cta-button">Book an Appointment</a>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-choose">
+      <h2>Why Choose Us</h2>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon">🕒</div>
+          <h3>24/7 Emergency</h3>
+          <p>Round-the-clock care for urgent needs.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">👩‍⚕️</div>
+          <h3>Expert Doctors</h3>
+          <p>Board-certified specialists in every field.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🩺</div>
+          <h3>Modern Equipment</h3>
+          <p>Latest diagnostic and treatment technology.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">💰</div>
+          <h3>Affordable Care</h3>
+          <p>Quality healthcare that fits your budget.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPARTMENTS PREVIEW -->
+    <section class="dept-preview">
+      <h2>Our Departments</h2>
+      <div class="dept-strip">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=300&h=200&fit=crop" alt="Cardiology department" loading="lazy">
+          <figcaption>Cardiology</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=300&h=200&fit=crop" alt="Pediatrics department" loading="lazy">
+          <figcaption>Pediatrics</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=300&h=200&fit=crop" alt="Emergency ward" loading="lazy">
+          <figcaption>Emergency</figcaption>
+        </figure>
+      </div>
+      <p><a href="gallery.html" class="link-arrow">View all departments &amp; doctors →</a></p>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer role="contentinfo">
+    <div class="footer-content">
+      <div class="footer-col">
+        <h4>Hope Valley Hospital</h4>
+        <p class="tagline">Care you can trust.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="gallery.html">Departments</a></li>
+          <li><a href="booking.html">Book Appointment</a></li>
+          <li><a href="about.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>📞 +252 61 234 5678</p>
+        <p>✉️ info@hopevalley.so</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Hope Valley Hospital · Student: Sadik C1250108</p>
+    </div>
+  </footer>
+</body>
+</html>
