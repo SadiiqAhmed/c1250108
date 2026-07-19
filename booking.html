@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment - Hope Valley</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ===== HEADER (fixed) ===== -->
+  <header role="banner">
+    <div class="header-container">
+      <div class="logo"><a href="index.html">🏥 Hope Valley</a></div>
+      <nav role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Departments</a></li>
+          <li><a href="booking.html" class="active">Book Appointment</a></li>
+          <li><a href="help.html">Help</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="booking-section">
+      <h1>Book an Appointment</h1>
+      <form id="booking-form" action="#confirmation" method="get">
+        <!-- PERSONAL INFO -->
+        <fieldset>
+          <legend>Personal Info</legend>
+          <div class="form-row">
+            <label for="fullname">Full Name *</label>
+            <input type="text" id="fullname" name="fullname" placeholder="e.g. Ahmed Hassan" required>
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" placeholder="+252 61 234 5678" pattern="[\+0-9\s\-]+" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+          </div>
+        </fieldset>
+
+        <!-- APPOINTMENT DETAILS -->
+        <fieldset>
+          <legend>Appointment Details</legend>
+          <div class="form-row">
+            <label for="department">Department *</label>
+            <select id="department" name="department" required>
+              <option value="">Select a department</option>
+              <option value="cardiology">Cardiology</option>
+              <option value="dermatology">Dermatology</option>
+              <option value="pediatrics">Pediatrics</option>
+              <option value="orthopedics">Orthopedics</option>
+              <option value="general">General Medicine</option>
+            </select>
+          </div>
+          <div class="form-row radio-group">
+            <span class="label-text">Gender *</span>
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+          </div>
+          <div class="form-row checkbox-group">
+            <span class="label-text">Reason for visit</span>
+            <label><input type="checkbox" name="reason" value="checkup"> General Checkup</label>
+            <label><input type="checkbox" name="reason" value="followup"> Follow-up</label>
+            <label><input type="checkbox" name="reason" value="vaccination"> Vaccination</label>
+            <label><input type="checkbox" name="reason" value="labtest"> Lab Test</label>
+            <label><input type="checkbox" name="reason" value="emergency"> Emergency</label>
+          </div>
+          <div class="form-row">
+            <label for="prefdate">Preferred Date *</label>
+            <input type="date" id="prefdate" name="prefdate" min="2026-07-06" max="2026-12-31" required>
+          </div>
+          <div class="form-row">
+            <label for="comments">Comments / Symptoms</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Brief description of symptoms..."></textarea>
+          </div>
+        </fieldset>
+
+        <!-- SUBMIT & CONFIRMATION (via :target) -->
+        <div class="form-actions">
+          <button type="submit" class="cta-button">Submit Appointment</button>
+        </div>
+      </form>
+
+      <!-- static confirmation (shown via :target) -->
+      <div id="confirmation" class="confirmation-box">
+        <h3>✅ Appointment Request Received</h3>
+        <p>Thank you! We will confirm your booking within 24 hours.</p>
+        <p><a href="index.html">← Return to Home</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer role="contentinfo">
+    <div class="footer-content">
+      <div class="footer-col"><h4>Hope Valley Hospital</h4><p class="tagline">Care you can trust.</p></div>
+      <div class="footer-col"><h4>Quick links</h4><ul><li><a href="gallery.html">Departments</a></li><li><a href="booking.html">Book Appointment</a></li><li><a href="about.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><p>📞 +252 61 234 5678</p><p>✉️ info@hopevalley.so</p></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Hope Valley Hospital · Student: Sadik C1250108</p></div>
+  </footer>
+</body>
+</html>
